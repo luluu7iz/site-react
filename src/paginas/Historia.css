@@ -1,0 +1,58 @@
+.historia-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.historia-container h2 {
+    font-size: 24px;
+    color: #c6210b;
+    margin-bottom: 20px;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.legenda {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.imagem-direita, .imagem-esquerda {
+    width: 500px; 
+    height: 400px; 
+    border-radius: 5px;
+    object-fit: cover; 
+}
+
+.imagem-direita {
+    order: 2;
+}
+
+.imagem-esquerda {
+    order: 1;
+}
+
+@media (max-width: 768px) {
+    .linha {
+        flex-direction: column; 
+    }
+
+    .imagem-direita, .imagem-esquerda {
+        width: 100%;
+        height: auto; 
+        margin-bottom: 20px; 
+    }
+
+    .legenda {
+        margin: 0 0 20px 0; 
+        text-align: center;
+    }
+}
